@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_614140_needit_needit" sizeclass="12" type="collection">
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_614140_needit_needit" sizeclass="23" type="collection">
+        <element attributes="target_field=percent_complete_target,target_threshold_colors=0:color1;33:color2;66:color3;90:color4,target_field=target&#13;&#10;" label="% Complete" max_length="15" name="percent" type="percent_complete"/>
         <element attributes="encode_utf8=false" label="Requested for" max_length="32" name="requestedfor" reference="sys_user" type="reference"/>
+        <element label="Target" max_length="20" name="target" type="decimal"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="New Choice" max_length="40" name="u_choice_3" type="string">
             <choice>
                 <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
